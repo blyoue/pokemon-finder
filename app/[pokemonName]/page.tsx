@@ -8,7 +8,7 @@ export default async function PokemonPage({ params }: { params: { pokemonName: s
     const { pokemonName } = params;
     const pokemonObject = await getPokemonObject(pokemonName);
     const pokemonStats = pokemonObject.stats;
-    console.log("######", pokemonStats)
+    // console.log("######", pokemonStats)
     return (
         <>
             <div className="flex flex-col md:flex-row justify-center items-center xl:justify-around w-full mt-20 xl:w-2/3">
