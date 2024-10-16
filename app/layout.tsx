@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <main className="flex min-h-screen flex-col items-center p-24">
+          <main className="flex min-h-screen flex-col items-center p-6 pt-24 sm:p-24">
             <div className="w-full justify-center flex h-10 mb-6 items-center">
               <Link href="/">
                 <h2 className="font-title text-center text-2xl">Pokémon Finder</h2>
