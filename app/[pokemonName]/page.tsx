@@ -29,7 +29,7 @@ export default async function PokemonPage({ params }: { params: { pokemonName: s
                         </CardFooter>
                     </Card>
                 </div>
-                <div className="w-full md:w-1/2 xl:w-2/5 flex flex-col justify-between md:px-10 xl:px-0">
+                <div className="w-full md:w-1/2 xl:w-2/5 flex flex-col h-full justify-between md:px-10 xl:px-0">
                     <StatsChart pokemonStats={pokemonStats}/>
                     <div className="grid grid-cols-2 w-full text-xl capitalize">
                         {pokemonStats.map((stat, index) => {
