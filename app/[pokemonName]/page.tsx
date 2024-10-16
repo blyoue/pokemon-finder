@@ -11,7 +11,7 @@ export default async function PokemonPage({ params }: { params: { pokemonName: s
     console.log("######", pokemonStats)
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-center md:items-end xl:justify-around items-center w-full mt-20 xl:w-2/3">
+            <div className="flex flex-col md:flex-row justify-center items-center xl:justify-around w-full mt-20 xl:w-2/3">
                 <div className="w-2/3 md:w-2/5 xl:w-2/5">
                     <Card className="md:px-10 md:py-16 m-auto">
                         <CardContent className="p-0">
