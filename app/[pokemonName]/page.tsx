@@ -11,7 +11,7 @@ export default async function PokemonPage({ params }: { params: { pokemonName: s
     console.log("######", pokemonStats)
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-center xl:justify-around items-center w-full mt-20 xl:w-2/3">
+            <div className="flex flex-col md:flex-row justify-center md:items-end xl:justify-around items-center w-full mt-20 xl:w-2/3">
                 <div className="w-2/3 md:w-2/5 xl:w-2/5">
                     <Card className="md:px-10 md:py-16 m-auto">
                         <CardContent className="p-0">
@@ -34,7 +34,7 @@ export default async function PokemonPage({ params }: { params: { pokemonName: s
                     <div className="grid grid-cols-2 w-full text-xl capitalize">
                         {pokemonStats.map((stat, index) => {
                             return (
-                                    <h2 key={index} className="mx-auto font-pixel text-base lg:text-xl font-serif"><span>{stat.stat.name.replace('special-', 'sp. ')}:</span> {stat.base_stat}</h2>
+                                    <h2 key={index} className="mx-auto font-pixel text-base lg:text-xl"><span>{stat.stat.name.replace('special-', 'sp. ')}:</span> {stat.base_stat}</h2>
                             )})
                     }
                     </div>
