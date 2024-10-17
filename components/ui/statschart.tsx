@@ -26,9 +26,9 @@ export function StatsChart({ pokemonStats }: { pokemonStats: Stat[]}) {
         return {stat: modifiedName , value: s.base_stat}
     })
     return (
-        <ChartContainer config={chartConfig} className="mx-auto aspect-square w-full">
-            <RadarChart data={chartData} outerRadius="60%">
-                <PolarAngleAxis dataKey="stat" tick={{ fontSize: 16, fill: "#ffffff", dy: 2, fontFamily: '"Pixelify Sans"'}}/>
+        <ChartContainer config={chartConfig} className="mx-auto aspect-square w-full overflow-visible">
+            <RadarChart data={chartData} outerRadius="60%" margin={{ right: 100}}>
+                <PolarAngleAxis dataKey="stat" tick={{ fontSize: 16, fill: "#ffffff", dy: 2, fontFamily: '"Pixelify Sans"'}} className="overflow-visible"/>
                 <PolarGrid />
                 <Radar
                     dataKey="value"
